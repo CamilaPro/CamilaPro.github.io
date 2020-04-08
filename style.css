@@ -2,21 +2,22 @@
 html, body {
   padding: 0 0 0 0;
   margin: 0;
-  font-family: 'helvetica', 'arial', 'sans';
+  background: #33353b;
+  font-family: 'PT Sans Narrow';
 }
 
 h1,h2,h3,h4 {
-  font-family: 'helvetica', 'arial', 'sans';
+  font-family: 'PT Sans Narrow';
   }
 
 
 a {
-  color: #000;
+  color: #eda06f;
 }
 
 .header {
-  background: #fff;
-  color: #000;
+  background: #33353b;
+  color: #eda06f;
   height: 500px;
   padding: 30px 30px 30px;
 }
@@ -26,9 +27,11 @@ a {
   }
 
 .assignment {
-  font-size: 12px;
+  background: #33353b;
+  color: white;
+  font-size: 14px;
   line-height: 24px;
-  font-family: 'helvetica', 'arial', 'sans';
+  font-family: 'PT Sans Narrow';
   padding: 20px 20px 20px 30px;
   width: 250px;
   height: 350px;
@@ -36,13 +39,13 @@ a {
 }
 
 .assignment a {
-    color: #000;
+    color: white;
     text-decoration: none;
 }
 
 .assignment a:hover {
-  background: #F06;
-  color: #F06;
+  background: #33353b;
+  color: #eda06f;
   text-decoration: none;
 }
 
@@ -62,7 +65,7 @@ a {
 }
 
 .widebody a:hover {
-  background: #F06;
+  background: #eda06f;
   color: #FFF;
   text-decoration: none;
 }
