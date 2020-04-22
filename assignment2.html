@@ -4,22 +4,82 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <title>Example Student's HCDE 439 Physical Computing Page!</title> 
+        <title>3D printer set up!</title> 
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 
     </head> 
     <body> 
 
-        <div class="header">
-            <h1>Camila's Example Assignment 2!</h1>
+        <div class="header1">
+            <h1>3D printer set up!</h1>
+            <img src="printericon.png" width=400></a>
             <p>
-            <img src="puzzle.jpg" width=400></a>
-            </p>
-            <p>
-            Here is all the documentation for assignment 2!
-            </p>
+                In this assignment, I set up my DIY printer which is the Ender 3 Pro by Creality and did my first test print. In addition to building the printer, I tested some of the different setting options by printing some very small primitive objects with different print settings set up in Cura the slicing software. 
+            </p> 
         </div>
-        
+
+
+         <div class="assignment2">
+            <h2>Printer Set Up</h2>
+                  <img src="springer.jpg" width=300>
+                <p>I started my 3D printer right before class week 3 and continued it into class that night when we were given time. I started getting a little worried about assembling it on the carpet and what that might do to the calibration, so I stopped and picked up the next day.
+                </p>
+                <p>Next day I still wasn’t sure where I would put the printer, but I assembled the rest on the wood floor. I used a video this time instead of the manual and I wish I had used the video before because the way they had kept the verticals a little bit loose and also flipping it over to ensure the bed was flat. I had an issue getting the x axis on to the verticals because of the tightening issue so I needed my boyfriend to come and pick it up so I could loosen them. I kind of had to shove the wheels on to the vertical so that didn’t feel great but it ended up being fine. 
+                </p>
+                <p>I double checked that all the wheels and belts didn’t feel loose and ended up putting the printer on my boyfriend’s desk because it had enough room and was the easiest place to access form a workflow standpoint. The entire build process probably took me 1.5-2 hours total, including the tinkering of all the parts maybe 3.
+                </p>
+
+            <h2>Cubes</h2>
+                <p> The first portion of the assignment was to print various cubes of different qualities
+                  <ul>
+                    <li>1.  Low quality (0.28mm) (stl file)</li>
+                    <li>2.  Standard Quality (0.2mm) (stl file)</li>
+                    <li>3.  High Quality (0.12mm) (stl file)</li>
+                    <li>4.  Concentric pattern on top and bottom (stl file)</li>
+                </ul>
+                </p>
+                <p>Printed the first cube with general low-quality settings and a brim. Testing all of the axis I can see that the y and z measurements were off by about +/-0.3 mm which is consistent with the quality set. However, the z direction was off by about .5 mm which is out of tolerance for this quality setting. This print took about 20 minutes.</p>
+                <p>For the second cube of standard quality, when I walked away to check on something I came back to spaghetti! Luckily I caught it only a couple minutes into the print, looks like something on the brim got caught up and tangled because the cube itself looked like it was going well. Aborted the print to clean this up and started the same file over without changing any settings.</p>
+                <p>The second print came out fine, I noticed the x-direction again was off again by about .7 mm which is worse than the last print of lower quality. The other two sides were within tolerance by .2 mm as specified. This print took about 32 minutes.</p>
+                <p>For the high quality print, I wasn’t sure whether that meant “dynamic” quality or “super” quality so I picked super since that seems to be the most precise option available and I was curious to see a bigger incremental change in quality. Once the print started, the initial layer wasn’t sticking which caused me to spend the day of printing on recalibrating and altering hardware and parameters. Thing I changed included:
+                <ul>
+                    <li>Releveling the bed about 20 times</li>
+                    <li>Using test prints to help see where leveling issues are</li>
+                    <li>Changing the nozzle out in case it was clogged or damaged from scratching the bed during leveling</li>
+                </ul>
+                </p>
+                <p>What ended up working was:
+                <ul>
+                    <li>Slowing the speed of the initial layer by half- I think this helped give the filament more time to stick to the bed</li>
+                    <li>Adding glue to the bed- it think this helped fill any gaps that may have existed between the bed and the extruder</li>
+                    <li>Heightening the extrude temp from 200 to 210 and the bed temperature from 45 to 50- I think this helped push out the filament more consistently</li>
+                    <li>Changing the quality from super (0.12mm) back to dynamic (0.16mm)-I think this made more filament come out therefore help stick</li>
+                </ul>
+               The print took about 37 minutes and the issue of the tolerance in the x axis being lower still persists</p>
+               <p>For the concentric cube I went back to standard quality because I had better luck with that setting without sacrificing too much quality going low. This print took about 34 minutes</p>
+
+            <h2>Tubes</h2>
+                <p> The second part of the assignment was to print tubes with different wall thicknesses. 
+                  <ul>
+                    <li>1.  2 cm diameter and .5 cm high, single wall thickness (stl file)</li>
+                    <li>2.  2 cm diameter and .5 cm high, double wall thickness, random Z alignment (stl file)</li>
+                </ul>
+                I used standard quality because I had good luck with that on the cubes portion of this assignment. For the first 2cm tube I did a 1mm wall thickness. But when I printed this file it dawned on me that I hadn’t turned off infill, learned my lesson to always preview!</p>
+                <p>Second time around I made sure that the top and bottom layers were set to 0 also.</p>
+                <p>This single walled tube took about 5 minutes to print. This was about 1.98cm in diam which was close enough and the height was within .005 cm which was great.</p>
+                <p>For the double walled tube, I changed the tube to be 2mm and set the Z alignment to random. The double walled took about 7 minutes</p>
+
+            <h2>Cylinders</h2>
+                <p> The third part of the assignment was to print tubes with different cylinders with different orientations and tolerances. 
+                  <ul>
+                    <li>1.  2 cm diameter cylinder on side with supports, exported with 0.1cm tolerance (stl file)</li>
+                    <li>2.  2 cm diameter cylinder, exported with .005 cm tolerance (stl file)</li>
+                </ul>
+                The first cylinder printed with no problems, the x direction tolerance issue still persists and was off by .5 mm but I guess that is within tolerance for what was specified in the export.</p>
+
+                <p>The second cylinder took 24 minutes with the x and y being within specified tolerance, but this time the x direction was off by almost 1 mm </p>
+
+         </div>
     </body>
 </html>
