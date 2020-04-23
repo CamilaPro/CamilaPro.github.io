@@ -31,12 +31,12 @@
                 </p>
 
             <h2>Cubes</h2>
-                <p> The first portion of the assignment was to print various cubes of different qualities
+                <p> The first portion of the assignment was to print the same cube (<a href="2cmCube1.stl">stl file</a>) of different qualities
                   <ul>
-                    <li>1.  Low quality (0.28mm) (stl file)</li>
-                    <li>2.  Standard Quality (0.2mm) (stl file)</li>
-                    <li>3.  High Quality (0.12mm) (stl file)</li>
-                    <li>4.  Concentric pattern on top and bottom (stl file)</li>
+                    <li>1.  Low quality (0.28mm) (<a href="2cmCube_low.gcode">gcode</a>)</li>
+                    <li>2.  Standard Quality (0.2mm) (<a href="2cmCube_std.gcode">gcode</a>)</li>
+                    <li>3.  High Quality (0.12mm) (<a href="2cmCube_highslow.gcode">gcode</a>)</li>
+                    <li>4.  Concentric pattern on top and bottom (<a href="2cmCube_conc.gcode">gcode</a>)</li>
                 </ul>
                 </p>
                 <p>Printed the first cube with general low-quality settings and a brim. Testing all of the axis I can see that the y and z measurements were off by about +/-0.3 mm which is consistent with the quality set. However, the z direction was off by about .5 mm which is out of tolerance for this quality setting. This print took about 20 minutes.</p>
@@ -60,10 +60,10 @@
                <p>For the concentric cube I went back to standard quality because I had better luck with that setting without sacrificing too much quality going low. This print took about 34 minutes</p>
 
             <h2>Tubes</h2>
-                <p> The second part of the assignment was to print tubes with different wall thicknesses. 
+                <p> The second part of the assignment was to print the same tube (<a href="2cmTube.stl">stl file</a>) with different wall thicknesses. 
                   <ul>
-                    <li>1.  2 cm diameter and .5 cm high, single wall thickness (stl file)</li>
-                    <li>2.  2 cm diameter and .5 cm high, double wall thickness, random Z alignment (stl file)</li>
+                    <li>1.  2 cm diameter and .5 cm high, single wall thickness (<a href="2cmTube_1mm.gcode">gcode</a>)</li>
+                    <li>2.  2 cm diameter and .5 cm high, double wall thickness, random Z alignment (<a href="2cmTube_2mm_ranZ.gcode">gcode</a>)</li>
                 </ul>
                 I used standard quality because I had good luck with that on the cubes portion of this assignment. For the first 2cm tube I did a 1mm wall thickness. But when I printed this file it dawned on me that I hadn’t turned off infill, learned my lesson to always preview!</p>
                 <p>Second time around I made sure that the top and bottom layers were set to 0 also.</p>
@@ -73,8 +73,8 @@
             <h2>Cylinders</h2>
                 <p> The third part of the assignment was to print tubes with different cylinders with different orientations and tolerances. 
                   <ul>
-                    <li>1.  2 cm diameter cylinder on side with supports, exported with 0.1cm tolerance (stl file)</li>
-                    <li>2.  2 cm diameter cylinder, exported with .005 cm tolerance (stl file)</li>
+                    <li>1.  2 cm diameter cylinder on side with supports, exported with 0.1cm tolerance (<a href="2cmCyl0.1tol.stl">stl file</a>) (<a href="2cmCyl0.1tol_onside.gcode">gcode</a>)</li>
+                    <li>2.  2 cm diameter cylinder, exported with .005 cm tolerance (<a href="2cmCyl0.005tol.stl">stl file</a>) (<a href="2cmCyl0.005tol.gcode">gcode</a>)</li>
                 </ul>
                 The first cylinder printed with no problems, the x direction tolerance issue still persists and was off by .5 mm but I guess that is within tolerance for what was specified in the export.</p>
 
