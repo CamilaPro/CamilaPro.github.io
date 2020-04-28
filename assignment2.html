@@ -36,6 +36,7 @@
                 <img src="pig1.png" width=250 style="padding:0 10px"><img src="pig2.png" width=200 style="padding:0 10px"><img src="pig3.png" width=200 style="padding:0 10px"><img src="pig4.png" width=200 style="padding:0 10px">
 
             <h2>Cubes</h2>
+            <img src="cubes.png" width=500 style="padding:0 10px">
                 <p> The first portion of the assignment was to print the same cube (<a href="2cmCube1.stl">stl file</a>) of different qualities
                   <ul>
                     <li>1.  Low quality (0.28mm) (<a href="2cmCube_low.gcode">gcode</a>)</li>
@@ -56,27 +57,39 @@
                     <li>Using test prints to help see where leveling issues are</li>
                     <li>Changing the nozzle out in case it was clogged or damaged from scratching the bed during leveling</li>
                 </ul>
+                <img src="highcubebad1.png" width=270 style="padding:0 10px"><img src="highcubebad2.png" width=270 style="padding:0 10px">
                 </p>
                 <p>What ended up working was:
                 <ul>
                     <li>Slowing the speed of the initial layer by half- I think this helped give the filament more time to stick to the bed</li>
+                    <img src="supersett.png" width=270 style="padding:0 10px">
                     <li>Adding glue to the bed- it think this helped fill any gaps that may have existed between the bed and the extruder</li>
                     <li>Heightening the extrude temp from 200 to 210 and the bed temperature from 45 to 50- I think this helped push out the filament more consistently</li>
                     <li>Changing the quality from super (0.12mm) back to dynamic (0.16mm)-I think this made more filament come out therefore help stick</li>
                 </ul>
                The print took about 37 minutes and the issue of the tolerance in the x axis being lower still persists</p>
+               <img src="highcube1.png" width=270 style="padding:0 10px"><img src="highcube2.png" width=270 style="padding:0 10px"><img src="highcube3.png" width=270 style="padding:0 10px">
+
                <p>For the concentric cube I went back to standard quality because I had better luck with that setting without sacrificing too much quality going low. This print took about 34 minutes</p>
+               <img src="conccube1.png" width=270 style="padding:0 10px"><img src="conccube2.png" width=270 style="padding:0 10px"><img src="conccube3.png" width=270 style="padding:0 10px">
 
             <h2>Tubes</h2>
+            <img src="tubes.png" width=500 style="padding:0 10px">
                 <p> The second part of the assignment was to print the same tube (<a href="2cmTube.stl">stl file</a>) with different wall thicknesses. 
                   <ul>
                     <li>1.  2 cm diameter and .5 cm high, single wall thickness (<a href="2cmTube_1mm.gcode">gcode</a>)</li>
                     <li>2.  2 cm diameter and .5 cm high, double wall thickness, random Z alignment (<a href="2cmTube_2mm_ranZ.gcode">gcode</a>)</li>
                 </ul>
                 I used standard quality because I had good luck with that on the cubes portion of this assignment. For the first 2cm tube I did a 1mm wall thickness. But when I printed this file it dawned on me that I hadn’t turned off infill, learned my lesson to always preview!</p>
+                <img src="tubebad1.png" width=270 style="padding:0 10px"><img src="tubebad2.png" width=400 style="padding:0 10px">
                 <p>Second time around I made sure that the top and bottom layers were set to 0 also.</p>
+                <img src="tubesett.png" width=400 style="padding:0 10px">
                 <p>This single walled tube took about 5 minutes to print. This was about 1.98cm in diam which was close enough and the height was within .005 cm which was great.</p>
-                <p>For the double walled tube, I changed the tube to be 2mm and set the Z alignment to random. The double walled took about 7 minutes</p>
+                <img src="singtube1.png" width=270 style="padding:0 10px"><img src="singtube2.png" width=270 style="padding:0 10px"><img src="singtube3.png" width=270 style="padding:0 10px"><img src="singtube4.png" width=270 style="padding:0 10px">
+                <p>For the double walled tube, I changed the tube to be 2mm and set the Z alignment to random. </p>
+                <img src="dubtubesett.png" width=500 style="padding:0 10px">
+                <p>The double walled took about 7 minutes</p>
+                <img src="dubtube1.png" width=270 style="padding:0 10px"><img src="dubtube2.png" width=270 style="padding:0 10px"><img src="dubtube3.png" width=270 style="padding:0 10px">
 
             <h2>Cylinders</h2>
                 <p> The third part of the assignment was to print tubes with different cylinders with different orientations and tolerances. 
@@ -85,8 +98,10 @@
                     <li>2.  2 cm diameter cylinder, exported with .005 cm tolerance (<a href="2cmCyl0.005tol.stl">stl file</a>) (<a href="2cmCyl0.005tol.gcode">gcode</a>)</li>
                 </ul>
                 The first cylinder printed with no problems, the x direction tolerance issue still persists and was off by .5 mm but I guess that is within tolerance for what was specified in the export.</p>
+                <img src="cyl1.png" width=270 style="padding:0 10px"><img src="cyl2.png" width=270 style="padding:0 10px"><img src="cyl3.png" width=270 style="padding:0 10px"><img src="cyl4.png" width=270 style="padding:0 10px">
 
                 <p>The second cylinder took 24 minutes with the x and y being within specified tolerance, but this time the x direction was off by almost 1 mm </p>
+                 <img src="cylup1.png" width=270 style="padding:0 10px"><img src="cylup2.png" width=270 style="padding:0 10px"><img src="cylup3.png" width=270 style="padding:0 10px"><img src="cylup4.png" width=270 style="padding:0 10px">
 
          </div>
     </body>
