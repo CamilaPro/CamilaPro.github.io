@@ -22,7 +22,7 @@
 
          <div class="assignment2">
             <h2>Nested Objects</h2>
-                  
+            <img src="na.png" width=500 style="padding:0 10px">      
                 <p>For the first object, we were to design a nested object in grasshopper that can be printed in place and taken apart upon printing it.</p>
     
                 <p>I wanted to create plates that nest similar to the way chips and salsa are served, but since the assignment required it to be three items, I added an extra bowl that maybe you can put other toppings on, like olives or some sour cream. Imagination required.
@@ -38,17 +38,59 @@
                 <img src="GHnested3.png">
                 <p>Once it was done, I realized the bowls needed some space in between them in order to properly be able to print in place and be able to be disassembled. I was really helpful to be using grasshopper at this point because all I had to do was define a Z component in the vector that defined the array and everything else followed suit. </p>
                 <img src="GHnested4.png">                
-                <p>Currently having issues with the STL export and the slicing of the object how i want it to slice, to be continued...</p>
-                <img src=".png">                
+                <p>Then I baked the bottom layer boundary surfaces and the tapered walls. I needed to do some clean up in rhino because the surfaces created got a little warped from the taper/ baking. I deleted the old surface and created a new plane from the poly surface and performed an extrude curve and offset plane from that.</p>
+                <img src="GHnested5.png" style="padding:0 10px"><img src="GHnested6.png" style="padding:0 10px">
+                <p>There was a similar issue with the second bowl but on such a minor level I decided not to delete because with tolerances that might not matter anyways, plus I am curious to see what happens</p>
+                <img src="GHnested7.png" style="padding:0 10px"><img src="GHnested8.png" style="padding:0 10px">
+                <p>For the inner bowl, there was less space in between the smallest bowl and the second, this is because of the z direction offset for the array was affected by the scale. I intentionally want to leave space between the bowls so that Cura can generate structure that I can rip out. Extruding this downward, I run the risk of making that structure so close to the solids it might be difficult to detach, so the bottom of this bowl (unlike the others) was extruded upwards to try and alleviate that risk.</p>   
+                <img src="GHnested9.png" style="padding:0 10px"><img src="GHnested10.png" style="padding:0 10px">
+                <p>I performed a Boolean union on each of the bowls independently then I exported as an STL. In Cura it imported off the bad and pretty large, so I needed to move and scale it to about 75% of the original file.</p>
+                <img src="GHnested11.png" style="padding:0 10px"><img src="GHnested12.png" style="padding:0 10px">
+                <p>Upon preview, it does look like there will be sufficient support structure to be able to detach each bowl which is good.</p>
+                <img src="GHnested13.png" width=420 style="padding:0 10px"><img src="GHnested14.png" width=420 style="padding:0 10px">
+                <p>The print is going to take a little over 8 hours which is currently in progress…</p>
+                <p>Files:
+                <ul>
+                    <li><a href="nestingbb.gh">Grasshopper definition</a></li>
+                    <li><a href="nesting.3dm">Rhino file</a></li>
+                    <li><a href="nesting.stl">STL file</a></li>
+                </ul></p>
+
                 <p></p>
                 <img src="">
 
 
             <h2>Cardboard Clips</h2>
             <img src="na.png" width=500 style="padding:0 10px">
-                <p> For the second object, the idea was to design and print clips that would hold multiple pieces of cardboard together. The idea was that the design can be easily manipulated in rhino such that the different tolerances required to effective hold the different carboards together can be changed quickly with a value change in grasshopper.
+                <p> For the second object, the idea was to design and print clips that would hold multiple pieces of cardboard together. The idea was that the design can be easily manipulated in rhino such that the different tolerances required to effectively hold the different carboards together can be changed quickly with a value change in grasshopper.
                 </p>
+                <p>This assignment was interesting because I actually use a bunch of cardboard boxes to keep my 6-month-old dog from going up or down stairs since he isn’t very fond of them. As he’s gotten bigger, we’ve needed to add more to the barricade so these might actually be very useful for keeping those together.</p>
+                <img src="tunebox1.png" style="padding:0 10px"><img src="tunebox2.png" style="padding:0 10px">
+                <p>The first three boxes I wanted to focus on were those from the barricade. Those will have 3 places to “pinch” together. Those will be the two squares together, then each square to the rectangle.</p>
+                <img src="barricade1.png" width=420 style="padding:0 10px">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
                 
+
+                <p>This design took a back burner to the nested object print so video is still in work…</p>
+
+                <p>Files (under construction):
+                <ul>
+                    <li><a href="na">Grasshopper definition</a></li>
+                    <li><a href="na">STL file</a></li>
+                    <li><a href="na">Video</a></li>
+                </ul></p>
+             
+             <p></p>
+             <p><strong><a href="CamilaPro.github.io">< Back to Home</a></strong>  </p>
 
          </div>
     </body>
