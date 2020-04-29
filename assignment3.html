@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Grasshopper Design!</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header1">
+            <h1>Grasshopper Design!</h1>
+            <img src="naicon.png" width=400></a>
+            <p>
+                For this assignment, the objective was to use grasshopper to parametrically design two different types of objects to be 3D printed. 
+            </p> 
+        </div>
+
+
+         <div class="assignment2">
+            <h2>Nested Objects</h2>
+                  
+                <p>For the first object, we were to design a nested object in grasshopper that can be printed in place and taken apart upon printing it.</p>
+    
+                <p>I wanted to create plates that nest similar to the way chips and salsa are served, but since the assignment required it to be three items, I added an extra bowl that maybe you can put other toppings on, like olives or some sour cream. Imagination required.
+                </p>
+                
+                <p>With help from the class tutorial, I first created the oval curve in Rhino and used that as the geometry component in Grasshopper as the geometry component of an array that scaled in place. I used an xyz vector, array, series and scale component to do that  
+                </p>
+                <img src="GHnested1.png">
+                <p>Then I offset the curves in order to make the wall thickness, they were originally offsetting inwards, so I had to make the value negative to do what I wanted it to do. This became necessary when I created the bottom boundary layer to define the bottom of each bowl, because if it was inside it wouldn’t be attached to both the inner and outer walls. Then I performed a graft on a merge component in order to create a surface in between the original curve and its corresponding offset that would later be extruded.
+                </p>
+                <img src="GHnested2.png">
+                <p>I used just a general extrude on the walls and I tried to mess around with cosine to make the walls flare outward, but I couldn’t get that to work because they would always flare in the same direction. I reached out to the class and was given the idea to use the taper function, so I messed around with that a bit, the function was super sensitive so the difference between the start and the end are .1. I specifically wanted the taper to be extremely subtle because otherwise the print might require support and I don’t have time to wait for that.</p>
+                <img src="GHnested3.png">
+                <p>Once it was done, I realized the bowls needed some space in between them in order to properly be able to print in place and be able to be disassembled. I was really helpful to be using grasshopper at this point because all I had to do was define a Z component in the vector that defined the array and everything else followed suit. </p>
+                <img src="GHnested4.png">                
+                <p>Currently having issues with the STL export and the slicing of the object how i want it to slice, to be continued...</p>
+                <img src=".png">                
+                <p></p>
+                <img src="">
+
+
+            <h2>Cardboard Clips</h2>
+            <img src="na.png" width=500 style="padding:0 10px">
+                <p> For the second object, the idea was to design and print clips that would hold multiple pieces of cardboard together. The idea was that the design can be easily manipulated in rhino such that the different tolerances required to effective hold the different carboards together can be changed quickly with a value change in grasshopper.
+                </p>
+                
+
+         </div>
+    </body>
+</html>
