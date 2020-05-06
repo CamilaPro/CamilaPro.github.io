@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Getting Meshy!</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header1">
+            <h1>Getting Meshy!</h1>
+            <img src="naicon.png" width=400></a>
+            <p>
+                For this assignment, the objective was to edit and combine the mesh of two STL files in order to create one that would be ready for printing. 
+            </p> 
+        </div>
+
+
+         <div class="assignment2">
+            <h2>Baby Yoda Mesh</h2>
+            <img src="na.png" width=500 style="padding:0 10px">      
+                
+
+
+                <p>For this project, I wanted to do something with baby yoda for my 3-year-old nephew. Last week when I was video chatting them, I showed him my nested object printing. He wasn’t very impressed by dishes so when I asked what he prefer I make he said baby yoda, so were we are. I chose a low poly object because he can be very detailed. Also for the sake of the assignment and combining STL files, I found the bassinet crib he goes in as well. Click pictures for thingiverse pages:</p>
+                <a href="https://www.thingiverse.com/thing:4214042/files"><img src="lowpolybyoda.png" width=360 style="padding:0 10px"></a><a href="https://www.thingiverse.com/thing:4185206/files"><img src="bassinet.png" width=350 style="padding:0 10px"></a>
+
+                <p>When I imported them, relative to each other I was happy with their scales. The longest dimension of the crib however is 150mm so I am just going to scale it down in Cura when everything is said and done. </p>
+                <img src="meshy1.png" width=500 style="padding:0 10px">
+                <p>First for the Yoda, I wanted to get rid of his feet/toes details since they keep sticking out of the bassinet and they won’t really be necessary for the print.</p>
+                <p><img src="meshy2.png" width=600 style="padding:0 10px"></p>
+                <p><img src="meshy3.png" width=600 style="padding:0 10px"></p>
+                <p>Once I deleted the points I needed to delete, I manually tried to stitch together some mesh points as much as I could to close the gaps. I still ended up needing to check and repair mesh to close everything up. Ultimately I used fill mesh holes command to patch it up.</p>
+                <p>At this point, the models would likely export fine as an STL in I did a mesh boolean union, but because of the cantilevered design of the bassinet cover it would require lots of printed support. This in turn means a much higher print time (estimated at 18 hours) and it would be a pain to dig out from underneath. So I wanted to cut off the top of the bassinet to have it be a separate object that prints in order to assemble it after.</p>
+                <img src="meshy5.png" width=600 style="padding:0 10px">
+                <p>Once I did the mesh split, I filled the mesh holes on both parts of the bassinet. I also rotated the top part 180 degrees so there is less structure needed on the inside of the concaved portion. Then I put baby yoda in the bassinet and did a mesh boolean union on him and the bottom bassinet.</p>
+                <img src="meshy6.png" width=600 style="padding:0 10px">
+                <p>After scaling the model imported to about 60%, the new print is estimated to take about 6 hours to print!</p>
+                <img src="meshy7.png" width=600 style="padding:0 10px">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                
+
+
+                <p>Files:
+                <ul>
+                    <li><a href="byoda.stl">STL file</a></li>
+                    <li><a href="CE3_byoda.gcode">gcode</a></li>
+                </ul></p>
+             
+             <p></p>
+             <p><strong><a href="CamilaPro.github.io">< Back to Home</a></strong>  </p>
+
+         </div>
+    </body>
+</html>
