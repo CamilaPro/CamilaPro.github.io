@@ -22,7 +22,7 @@
 
          <div class="assignment2">
             <h2>Fitting</h2>
-            <img src="na.png" width=500 style="padding:0 10px">
+            <img src="fitting10.png" width=500 style="padding:0 10px">
                 <p>The first thing I did was take some measurements of the lamp cord I purchased for this class, I decided to use the holes it has at the top of it to create an adapter fitting for the future lamp to hang on.</p>
                 
                 <img src="measure1.png" width=300 style="padding:0 10px"><img src="measure2.png" width=300 style="padding:0 10px"><img src="measure3.png" width=300 style="padding:0 10px"><img src="measure4.png" width=300 style="padding:0 10px">
@@ -37,7 +37,7 @@
                 <p>This ended up being a great size to work with, when I make the shade ill make it such that I can slide this through the top of it.</p>
                 <img src="fitting8.png" width=300 style="padding:0 10px"><img src="fitting9.png" width=300 style="padding:0 10px"><img src="fitting10.png" width=300 style="padding:0 10px">
                 <p></p>
-                <p></p>
+                <p>Files:</p>
                 <ul>
                     <li><a href="lampfitting.3dm">Rhino file</a></li>
                     <li><a href="lampfitting2.stl">STL file</a></li>
@@ -51,22 +51,37 @@
             <img src="na.png" width=500 style="padding:0 10px">
 
                 
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>My goal with the shade is to make something that might be able to eventually snap on to my printer to provide some light there. I originally wanted to mess with the morph pattern function and wanted it to be twisted as well. Once I saw some peoples draft prints of morphing a pattern on to the surface, I realized how dark it can be (especially with the black PLA I have) and ultimately, I want this to really illuminate my 3D printer area. I decided to use shapes like hexagons and squares because the straight edges might make it easier to eventually have adapters that hook on to the top for the printer eventuall. I was inspired by this wall décor I have hanging in my room, which is just a low poly multi-faceted shape and used its angles and connection points to inspire a design.</p>
+                <img src="shadeinspo1.png" width=300 style="padding:0 10px"><img src="shadeinspo2.png" width=300 style="padding:0 10px">
+                <p>I started with measuring the minimum inner surface of the lamp by using my calibers and estimating how much space I would need for my hands to screw on the light so I can change it once it’s actually on.</p>
+                <img src="shademeas1.png" width=300 style="padding:0 10px">
+                <p>Once I defined that dimension, I made a curve for me to keep in the drawing so I can continuously reference what I need to maintain for clearance. I realized the very top of the lamp didn’t need my hand clearance, so I made the connection square a little bit smaller in efforts to make it a smaller print. I did however maintain the clearance for everything beyond the top </p>
+                <p><img src="shade1.png" width=500 style="padding:0 10px"></p>
+                <p>From there I attached the corners of the top square to a hexagon below it using lines and poly lines, then connecting that hexagon back to another square at the bottom of the lamp. I performed a Sweep 1 with a circular cross section that measured similar to the wire from my wall décor. Then, I trimmed and capped the sweeps to get the lamp to be flat at the ends where I needed to connect them at later on, also for just general cleaning.</p>
+                <p><img src="shade2.png" width=500 style="padding:0 10px"></p>
+                <p>Out of curiosity I brought the entire model into Cura and shockingly the whole thing would only take 1 day and 21 hours to print! What a deal!</p>
+                <img src="shadecura.png" width=500 style="padding:0 10px">
+                <p>So obviously I broke the print up into three sessions of print. The first top section of the lamp said it didn’t need supports so I just printed without. </p>
+                <img src="topshadecura1.png" width=500 style="padding:0 10px">
+                <p>The dimension of the wire didn’t really work out in this setting and as the model grew taller, the legs became more unstable. </p>
+                <img src="topprint1.png" width=400 style="padding:0 10px">
+                <p>I decided to up the scale of the wires and re sweep the entire thing in order to maintain the stability through the height. This only added about forty minutes to the estimated print time.</p>
+                <img src="topshadecura2.png" width=500 style="padding:0 10px">
+                <p>When that one started printing, it went well but the legs still got unstable even if it was later in the print. I tried to salvage this by taping them to reinforce the legs but that just wasn’t enough. The experience witnessing this was cringe worthy. </p>
+                <img src="topprint2.png" width=400 style="padding:0 10px">
+                <p>So, I ended up having to add structure in Cura anyways. After seeing how long it took to print when there was structure everywhere, I was pretty discouraged. Depending on the structure fill pattern, it could have been anywhere from 13 to 17 hours. Since the second time around I knew how strong the legs were, I knew I could try to cut out some of those supports. I used support blocks in Cura to try and cut down the time while still providing support.</p>
+                <img src="topshadecura3.png" width=350 style="padding:0 10px"><img src="topshadecura4.png" width=550 style="padding:0 10px">
+                <p>10 hours is not perfect but much more manageable than a 17 hour print. This design however was a little too conservative. About 5 hours in, the structure was still not touching the “wires” so the actual structure started toppling over.</p>
+                <img src="topprint3.png" width=400 style="padding:0 10px">
+                <p>Back to the drawing board with a little more conservatism.</p>
+                <img src="topshadecura5.png" width=500 style="padding:0 10px">
+                <p>At this point, where these structure blocks are placed it only saves an hour off the print, but at least not having it connected to the base and the very tips it will help me disassemble it all later.</p>
+                <p> </p>
+                <p>**This print in Progress**</p>
+                <p> </p>
+                <p>For the second half, there was no way of getting out of the 11 hours because the bottom square needed so much support. </p>
+                <img src="bottomshadecura1.png" width=500 style="padding:0 10px">
+                <p>Taking the square bottom out of this print will save an estimate of 3 hours. I made a structure block pattern in Cura for this one as well (picture to come) so we will see if that will fail or not. Currently still trying everything to make the top half work.</p>
                 <p></p>
                 <p></p>
                 <p></p>
@@ -97,11 +112,12 @@
                 <p></p>
 
 
-                <p>Files (under construction):
+                <p>Files:
                 <ul>
-                    <li><a href="na">Grasshopper definition</a></li>
-                    <li><a href="na">Rhino file</a></li>
-                    <li><a href="na">STL file</a></li>
+                    <li><a href="lampshade.3dm">Rhino file</a></li>
+                    <li><a href="lampshade_v2top.stl">STL file for top</a></li>
+                    <li><a href="lampshade_v2bottom.stl">STL file for bottom</a></li>
+                    <li><a href="lampshade_v2base.stl">STL file for square base</a></li>
                 </ul></p>
              
              <p></p>
