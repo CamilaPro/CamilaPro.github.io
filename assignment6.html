@@ -21,85 +21,103 @@
 
 
          <div class="assignment2">
-            <h2>Dodecahedron</h2>
-            <img src="na.png" width=500 style="padding:0 10px">      
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+            <h2>Dodecahedron Inspiration</h2>
+                <p>As a low poly theme from my lamp shade design, I was inspired to make a Terrarium. I liked the idea of doing something geometric again because I wanted to make a really cool split line like the example from the class slides with the dice.</p>
+                <img src="inspoterrarium.png" width=300 style="padding:0 10px"><img src="inspodice.png" width=430 style="padding:0 10px">
+                <p>When I thought through how this design might be molded, I figured casting this is probably not the best way to make this due to its hollow nature. I decided to combine the two inspirations and just create a 12-sided dice (shape also known as a dodecahedron) which might come in handy while we are playing more games being indoors these days.</p>   
+                <img src="inspo12dice.png" width=300 style="padding:0 10px">
+
+            <h2>Designing the 3D Mold for a Silicone Mold </h2>
+                <p>I first created the dodecahedron in rhino by using the rotate3D function with the pentagons and then the orient 3d to mirror the bottom 6 and the top 6. Then I imported a DXF I created of some curved numbers I created in Adobe Illustrator.</p>
+                <img src="dicemodel1.png" width=500 style="padding:0 10px">
+                <p>Once I got them all oriented on the faces and extruded, I was having about a 3 days’ worth of issues not being able to join and print these properly, so I had to go back and reorder my workflow. I learned that you need to be joining or using the Boolean union function early and often. You can always explode it later if you need to do something to it. Upon the second go around, I first created the dodecahedron then immediately created a multi-faceted plane that I would use as the mating surface. </p>
+                <img src="dicemodel2.png" width=300 style="padding:0 10px">
+                <p>I copied and pasted this shape twice and laid them down flat, one rotated 90 degrees and one -90 degrees. I enclosed both of these in a box for the silicone mold to hold into. I also added a cone at the top to allow an area for me to pour the plaster into.</p>
+                <img src="dicemodel3.png" width=500 style="padding:0 10px">
+                <p>I had a lot of trouble with Boolean unions and faces not being recognized with the embossed numbers. I printed my first mold without the numbers since I was pressed for time knowing the print was about 12 hours, the silicone rubber (OOMOO 30) would at least take 6 hours, and not knowing how fast the plaster of this volume would need to cure. I figured at the very least I can write things on the faces, maybe even customize!</p>
+                <img src="dicemodel4.png" width=300 style="padding:0 10px"><img src="dicemodel5.png" width=300 style="padding:0 10px">
+                <p>I eventually got the numbers to work which would be printed the next day. I learned the font curves (or curves being brought in as a .dxf for that matter) should always be rebuilt (using the rebuild function and adding more points, I usually doubled the original amount) for best success. I was able to extrude and cap each number and do a Boolean difference right to the molding’s surface.</p>
+                <p><img src="dicemodel6.png" width=500 style="padding:0 10px"></p>
+                <p><img src="dicemodel7.png" width=500 style="padding:0 10px"></p>
+                <p><img src="dicemodel8.png" width=300 style="padding:0 10px"><img src="dicemodel9.png" width=300 style="padding:0 10px"></p>
+                <p>Since this print took that entire day, I mixed and poured the OOMOO started casting the numberless dice first.</p>
+                <p>Files (numbered dice):</p>
                 <ul>
-                    <li><a href="nestingbb.gh">Grasshopper definition</a></li>
-                    <li><a href="nesting.3dm">Rhino file</a></li>
-                    <li><a href="nesting.stl">STL file</a></li>
+                    <li><a href="simpledice.3dm">Rhino file</a></li>
+                    <li><a href="otherv4_simpledice.stl">STL file face 1</a></li>
+                    <li><a href="pourv5_simpledice.stl">STL file face 2</a></li>
+                    <li><a href="numbers3.dxf">dxf file numbers</a></li>
                 </ul></p>
 
-                <p></p>
-                <img src="">
 
 
-            <h2>Cardboard Clips</h2>
-            <img src="na.png" width=500 style="padding:0 10px">
 
-                <p>Max and min between bottom square and rectangle ~21-26 mm:</p>
-                <img src="barricade6.png" width=300 style="padding:0 10px"><img src="barricade7.png" width=300 style="padding:0 10px">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                
+            <h2>Casting the Silicone Mold from 3D Printed Mold</h2>
 
-                <p>This design took a back burner to the nested object print so video is still in work…</p>
+                <p>This process was done pretty close to how the directions say on the box or any tutorial online. In order to know how much oomoo to actually make for both sides, I filled my square molds with water and filled both cups with them to measure how much volume I would need. Doing this I could mark where the oomoo should fill to. Since it needed to be 1:1 ratio, and the one mold without the cone obviously had less volume, I poured that water out and used the same volume in the other cup to mark it. I used the side with more volume to be conservative with the amount. </p>
+                <img src="oomoo1.png" width=300 style="padding:0 10px"><img src="oomoo2.png" width=300 style="padding:0 10px"><img src="oomoo3.png" width=300 style="padding:0 10px">
+                <p>Once done I carefully poured both colors into the same cup at similar times. I’ve seen some people online do one at a time, but I didn’t want too much of one color getting stuck at the bottom when I mixed so I poured both simultaneously. </p>
+                <img src="oomoo4.png" width=300 style="padding:0 10px"><img src="oomoo5.png" width=300 style="padding:0 10px">
+                <p>I followed directions online as well as inclass recommendations, mix until its all purple! I saw some hints of blue stripes sometimes so I made sure to keep mixing until that was all gone.</p>
+                <img src="oomoo6.png" width=300 style="padding:0 10px">
+                <p>Before pouring, I slammed the cup to the counter quite a bit to surface any of the bubbles. After, I poured very carefully to create the “ribbons” in the pour so that the bubbles stretched out and dissipated upon reaching the 3D mold.</p>
+                <img src="oomoo7.png" width=300 style="padding:0 10px"><img src="oomoo8.png" width=300 style="padding:0 10px">
+                <p>By the end of the cup, the oomoo started to get pretty lumpy. I think I was really slow stirring it because I didn’t want to create too many bubbles, but then with the slamming and careful pouring enough time passed it started to set. Luckily all of the surface was already covered, it was just the back face ended up being kind of lumpy. I let this set for 6 hours and it came out great!</p>
+                <img src="oomoo9.png" width=300 style="padding:0 10px"><img src="oomoo10.png" width=300 style="padding:0 10px">
+                <p>Did the same process later with the numbered mold except I mixed faster and slammed more so I didn’t have to worry about pouring lumpy oomoo. I directed the beginning of the pour right at the numbers because I wanted to make sure they got filled. Was happy with the result!</p>
+                <img src="oomoo11.png" width=500 style="padding:0 10px">
 
-                <p>Files (under construction):
-                <ul>
-                    <li><a href="na">Grasshopper definition</a></li>
-                    <li><a href="na">STL file</a></li>
-                    <li><a href="na">Video</a></li>
-                </ul></p>
+
+            <h2>Casting Plaster Dice inside the Silicone Mold</h2>
+                <p>For the plaster mix, I looked online and used some class resources. A previous student <a href="https://kelliead.github.io/assignment6.html">Kellie Dunn</a> and <a href="https://youtu.be/PYvAIeSyhgw">another guy online</a> both used this “island” method for very different volumes so I did that with mine too. I found very quickly that a little bit of water goes a very long way. Since you have to use a decent amount of plaster to create the islands, the volume increases over double. </p>
+                <img src="plaster1.png" width=300 style="padding:0 10px">
+                <p>I created a mold setter by shoving the bottom back into the original mold just to hold that together, and then filling the rest with Styrofoam. I also used tape to make sure the top stayed together as well. I started pouring the plaster mixture in until I couldn’t see the hole in the top anymore. I figured this signified it was full.</p>
+                <img src="plaster2.png" width=300 style="padding:0 10px"><img src="plaster3.png" width=300 style="padding:0 10px">
+                <p>When I opened it up, I was very happy with the results! </p>
+                <img src="plaster4.png" width=500 style="padding:0 10px">
+                <p>Once I was able to feel how easy the plaster was to break apart and brush off of the silicone, I started being less careful about my pour and just fill the entire funnel.</p>
+                <img src="plaster5.png" width=300 style="padding:0 10px"><img src="plaster6.png" width=300 style="padding:0 10px">
+                <p>It easily broke off of the mold when it was done. One thing I didn’t like about the end result was that there were some imperfections with the lines from the filament that translated to the silicone which in turn meant the plaster. Another was that you could kind of still see where the parting line was. To fix these issues I lightly sanded the faces and edges. A little bit of sanding went a long way!</p>
+                <img src="plaster8.png" width=300 style="padding:0 10px"><img src="plaster7.png" width=300 style="padding:0 10px">
+                <p>I repeated this process for the numbered dice as well. The numbers of the dice sometimes did not perfectly make the cast. Particularly numbers that had features in between that formed islands of plaster such as the 8 and particularly consistently the 6. I think this had to do with the depth of the embossing making the islands unstable as well as how small the font needed to be to fit on the face. Since I wouldn’t want to make the dice bigger I think I would play with the depth of the embossing to fix that issue.</p>
+                <img src="plaster9.png" width=300 style="padding:0 10px"><img src="plaster10.png" width=300 style="padding:0 10px">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+
+
+
              
              <p></p>
              <p><strong><a href="CamilaPro.github.io">< Back to Home</a></strong>  </p>
