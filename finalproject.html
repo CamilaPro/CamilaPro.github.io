@@ -13,7 +13,7 @@
 
         <div class="header1">
             <h1>Fascinators Fabuloso!</h1>
-            <img src="naicon.png" width=400></a>
+            <img src="fascinator1.png" width=320 style="padding:0 10px"><img src="fascinator2.png" width=400 style="padding:0 10px"></a>
             <p> My biggest goal of the final project was to somehow incorporate my sewing skills into the 3D printing skills I have learned over the quarter.</p> 
         </div>
 
@@ -45,7 +45,7 @@
                     <img src="flower1.png" width=400 style="padding:0 10px"><img src="flower2.png" width=260 style="padding:0 10px"> 
                     
                     <li>Creating odd shapes that create the illusion of defying physics</li>
-                    <p>For me, there need to be something odd and that’s what makes it a fascinator and not just a headband or a clip. I want to put something on like one of these swirls or something that really makes you question “how the heck is that on there?” The lily pad things on the bouquets of Josh Harker has a similar affect.</p>
+                    <p>For me, there need to be something odd and that’s what makes it a fascinator and not just a headband or a clip. I want to put something on like one of these swirls or something that really makes you question “how the heck is that on there?” The ripple on the bouquets of Josh Harker has a similar affect.</p>
                     <img src="odd1.png" width=300 style="padding:0 10px"><img src="odd2.png" width=300 style="padding:0 10px">
 
                     <li>Interrogate assembly options</li>
@@ -76,6 +76,65 @@
                         <li>Other hair accessories (such as bobby pins) as needed</li>
                     </ul>
                 </p>
+
+                <p><h2>Odd Shapes</h2></p>
+                <p>First, I printed <a href="https://www.thingiverse.com/thing:858954/files">this ribbon</a> I found from thingiverse, wanted to test its size and weight. I love the way it turned out because the layer direction makes it look shiny similar to a real ribbon! Only took about 8 hours to print</p>
+                <img src="shape1.png" width=300 style="padding:0 10px"><img src="shape2.png" width=300 style="padding:0 10px">
+                <p></p>
+                <p>I also created this shape which kind of mimics the ripple effect from the Josh Harker inspiration. I created a dxf in Adobe Illustrator from <a href="https://www.barewalls.com/art-print-poster/feather-icons_bwc21843845.html">a feather clipart</a> image trace which would hold the ripples together.</p>
+                <img src="shape3.png" width=300 style="padding:0 10px"><img src="shape4.png" width=300 style="padding:0 10px">
+                <p>I was happy with the print but with this theme being more of like a lacey cloth type look I thought it was a little too geometrical. I decided to stick with the ribbon but instead print it with a white silk filament (by SUNLU) to fit the white color scheme I am envisioning which had no issues.</p>
+                <img src="shape5.png" width=300 style="padding:0 10px"><img src="shape6.png" width=300 style="padding:0 10px">
+                <p>I loved the shine of the white silk filament so much, I tried to print everything for the fascinator with this color. That ended up being a problem for some of my structural pieces, more on that later…</p>
+
+
+                <p><h2>Flowers and Fabric</h2></p>
+                <p>I decided to combine the printing on fabric goals and the flower design by embedding the fabric inside of the flower shape. This meant the flower shape and slicing needed to be able to accommodate the ‘sandwiching’ of the fabric. I got <a href="https://www.thingiverse.com/thing:2000373/files">this rose</a> from thingiverse but I wanted to change the mesh, so that the base wasn’t so thick. </p>
+                <img src="rose1.png" width=300 style="padding:0 10px">
+                <p><img src="rose2.png" width=500 style="padding:0 10px"></p>
+                <p>This also came in very small so I had to scale it up in Cura to 800%. This rose ended up being an issue because the structure needed for the petals ended up being really difficult to separate making the end product look clunky.</p>
+                <img src="rose3.png" width=300 style="padding:0 10px">
+                <p>I found <a href="https://www.thingiverse.com/thing:1242111/files">another rose</a> on thingiverse that had the opposite problem, so I went into Rhino with that STL to make it thicker in order to accommodate the fabric. </p>
+                 <img src="rose4.png" width=300 style="padding:0 10px">
+                 <p><img src="rose5.png" width=500 style="padding:0 10px"></p>
+                 <p>I also performed a boolean difference on the curved surface to help with the adhesion since im planning on gluing that piece to the base that holds everything on it. In order to allow for the fabric to be printed, I added a pause in the print to allow the extruder to retract and let me place the fabric onto the bed. </p>
+                <p>As for the type of fabric, I printed on 7 different types of fabric, inludding chiffon, tulle and lace of all different genres. Theres 8 in the picture but I decided not to experiement with the sequiny one because I knew I didn’t want to go in that direction for my project.</p>
+                <img src="fabricp1.png" width=300 style="padding:0 10px">
+                <p>Being honest, I am not sure which one is officially which fabric type. I just selected them by the feel of the fabric and insuring it wasn’t too thick. Luckily, I made it to JoAnn fabrics the day before they started doing online only shopping due to COVID risks. It was really important for me to get in there and see the colors in person and FEEL the fabrics and how they move and everything. To experiment with each one, I cut out a piece about 24 cm x 19 cm of each type. I let the print of the flowers start and would place the fabric down after the pause happened. </p>
+                <img src="fabricplacing.gif" width=400 style="padding:0 10px">
+                <p>Then let the print continue for about 25 minutes and then aborted the print to make sure it would come off the bed without messing up the print “sandwich”. </p>
+                <img src="fabricprinting.gif" width=300 style="padding:0 10px">
+                <p>Printing on the fabric worked for every fabric I had, yay!</p>
+                <img src="fabricp2.png" width=300 style="padding:0 10px">
+                <p>Of these, I chose a pretty neutral color (second one up from the bottom left) and fabric that I had because the shapes on the factinator are already really eye catching. With that, I decided to identify two pauses in Cura so that I can add two layers of fabric to really make the tulle pop when it goes on.</p>
+                <img src="fabricp3.png" width=300 style="padding:0 10px">
+                
+
+
+                <p><h2>Assembly Parts</h2></p>
+                <p>I first printed <a href="https://www.thingiverse.com/thing:3701658/files">a base</a> that I could use as a surface on the head to mount all of the pieces onto. This was part of the ribbon fascinator file I found on thingiverse and I just figured it would come in handy.</p>
+                <img src="base1.png" width=300 style="padding:0 10px">
+                <p>I scaled this down 80% because it as originally the size of the entire bed which would certainly not be necessary. 80% still ended up being a little too big, I also printed it with the top side down which was a mistake because all of the left over structure remains ruined the look so it was a good thing I learned that early, I printed the second one 60% which was then a little too small to be able to actually put a bunch of stuff on it (the flowers, the ribbon etc) but again was good to learn early.</p>
+                <img src="base2.png" width=300 style="padding:0 10px">
+                <p>I then test printed this with the silk, and it dawned on me the silk filament wasn’t going to work out for the pieces I need reliable structure from. Once I took it off the bed it started delaminating making taking the structure off really hard and ruining the adhesion of some of the layers.</p>
+                <img src="baseflex.gif" width=300 style="padding:0 10px">
+                <p>It ended up being so flexy I needed to finish with the 3D finish just to hold its shape.</p>
+                <img src="base3.png" width=300 style="padding:0 10px">
+                <p>As that was curing, I decided I wanted a really interesting shape to be projected onto the base instead of just that oval shape holding everything. I decided to create another DXF from <a herf="https://fineartamerica.com/featured/abstract-seamless-lace-pattern-with-vikpit.html">a lace pattern</a> I found online. I image traced it in Adobe Illustrator and imported to Rhino. </p>
+                <img src="lace1.png" width=300 style="padding:0 10px"><img src="lace2.png" width=300 style="padding:0 10px">
+                <p>The high level of detail isn’t necessary for a print and infact could affect the stability of the base if there were too many cut outs. I strategically hand-picked only the bigger curves and then some of the smaller to fill in empty spots. When they were picked, they were fixed using the rebuild function to ensure proper extrude behavior. The curve is the same curve profile as the oval just instead a rectangle was projected over that arc to accommodate all the details.</p>
+                <img src="lace3.png" width=500 style="padding:0 10px">
+                <p>Once the shape was established, the lace was extruded through the curves surface and a Boolean difference was performed to create the holes.</p>
+                <img src="lace4.png" width=300 style="padding:0 10px">
+                <p>This is about a 14 hour print and it’s currently still printing…</p>
+                <p>Lastly, I needed a way to get all this stuff to actually stay on your head. I printed <a href="https://www.thingiverse.com/thing:1149552">a headband</a> from thingiverse as an option to attach everything to the head. It makes things a lot easier than relying on a hair clip to hold the weight of everything.</p>
+                <img src="headband1.png" width=300 style="padding:0 10px">
+                <p>The thin one ended up being a little too thin for attaching the base onto. I edited the STL to increase the height by almost half and it still wasn’t enough</p>
+                <img src="headband2.png" width=300 style="padding:0 10px">
+                <p>I printed the second one from that file which is the same shape just much taller, so I didn’t need to edit the STL file again. I printed this one right after I had done the silk base print thinking this would work since it was a simpler shape. After seeing this headband final print, I drew the conclusion that the silk PLA was for aesthetic prints only.</p>
+                <img src="headband3.png" width=300 style="padding:0 10px"><img src="headband4.png" width=300 style="padding:0 10px">
+                <p>I just didn’t want to keep needing to finish everything just for it to keep shape to I changed my filament to be the Proto-pasta matte white HTPLA. Originally, I had some issues with adhesion from this new filament, but that seemed to be fixed by printing with a brim instead of a skirt. </p>
+                <img src="headband5.png" width=300 style="padding:0 10px">
                 <p></p>
                 <p></p>
                 <p></p>
@@ -100,28 +159,26 @@
                 <p></p>
                 <p></p>
                 <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                
+                <h2>Demonstrated learnings!</h2>
+                <p>
+                    <ul>
+                        <li>3D printing</li>
+                        <li>Mesh editing</li>
+                        <li>Rendering</li>
+                        <li>Converting Images to 3D shapes</li>
+                    </ul>
+                </p>
+
+                <p>Bonus learnings!</p>
+                <p>
+                    <ul>
+                        <li>3D printing on Fabric</li>
+                        <li>3D Coating</li>
+                        <li>Experimenting with different printing materials</li>
+                    </ul>
+                </p>
+
                 
 
 
